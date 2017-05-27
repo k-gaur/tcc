@@ -1,0 +1,14 @@
+enter
+	int num1,num2|
+	print "Enter number 1 and number 2\n"|
+	scan num1,num2|
+	if num1>num2
+		print "Number 1 is greater than number 2"|
+	else
+		if num1<num2
+			print "Number 2 is greater than number 1"|
+		else
+			print "Number 1 and number 2 are equal"|
+		fi
+	fi
+exit

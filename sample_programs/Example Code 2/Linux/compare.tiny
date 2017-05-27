@@ -1,0 +1,16 @@
+#Program to compare two numbers
+
+enter
+	int num1=3,num2=5|
+	print "Enter the two numbers\n"|
+	scan num1,num2|
+	if num1>num2
+	    print "Num1 is greater than Num2\n"|
+	else
+	    if num2>num1
+	        print "Num2 is greater than Num1\n"|
+	    else
+	        print "Num1 and Num2 are equal\n"|
+        fi
+    fi  	   
+exit

@@ -1,0 +1,26 @@
+#Program to add two arrays
+
+enter
+	int a[5],i,b[5],c[5],n|
+	print "Enter array size\n"|
+	scan n|
+	print "Enter the array 1\n"|
+	loop i<n
+		scan a[i]|
+		i=i+1|
+	pool
+	i=0|
+	print "Enter the array 2\n"|
+	loop i<n
+		scan b[i]|
+		i=i+1|
+	pool
+	print "The sum is:\n"|
+	i=0|
+	loop i<n
+		c[i]=a[i]+b[i]|
+		print c[i],"\n"|
+		i=i+1|
+	pool
+exit
+

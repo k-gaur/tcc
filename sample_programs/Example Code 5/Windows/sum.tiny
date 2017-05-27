@@ -1,0 +1,17 @@
+enter
+	int sum,num,temp|
+	print "Enter number\n"|
+	scan num|
+	if num<=0
+		print "Number is invalid\n"|
+	else
+		temp=num|
+		loop temp
+			sum=sum+temp|
+			temp=temp-1|
+		pool
+		print "Sum upto ",num," is ",sum|
+	fi 
+exit
+
+	

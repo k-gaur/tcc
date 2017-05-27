@@ -1,0 +1,13 @@
+#Program to print the reverse of a number
+
+enter
+	int num,rev|
+	print "Enter the number\n"|
+	scan num|
+	print "The reverse of ",num," is "|
+	loop num
+		rev=(num%10)|
+		print rev|
+		num=num/10|
+	pool
+exit

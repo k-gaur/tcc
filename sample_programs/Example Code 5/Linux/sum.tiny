@@ -1,0 +1,17 @@
+#Program to calculate sum upto a given number
+
+enter
+	int temp,num,sum|
+	print "Enter number\n"|
+	scan num|
+	if num<=0
+		print "Invalid number entered\n"|
+	else
+		temp=num|
+		loop temp>0
+			sum=sum+temp|
+			temp=temp-1|
+		pool
+		print "Sum upto ",num," is ",sum,"\n"|
+	fi	
+exit

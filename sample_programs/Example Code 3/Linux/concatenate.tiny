@@ -1,0 +1,12 @@
+#Program to concatenate two strings and display the result
+
+enter
+	str:20 a,b,c|
+	int d|
+	print "Enter the string 1\n"|
+	scan a|
+	print "Enter the string 2\n"|
+	scan b|
+	d=a+b|
+	print "The concatenated string is ",c,"\n"|
+exit

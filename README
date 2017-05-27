@@ -1,0 +1,129 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+						TINY CONSTRUCTIVE COMPILER (TCC) - B.TECH FINAL YEAR PROJECT
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+									READ ME FILE
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Developers:
+___________
+
+1. Kushagra Gaur (1013310049)
+2. Sonu Kumar Kushwaha (1113310910)
+
+Supervisors:
+____________
+
+1. Nishant Kumar Hind, Assistant Professor, Dept. of Computer Science, NIET
+2. Prashant Singh, Head, Dept. of Computer Science, NIET
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hardware Requirements:
+______________________
+
+1. Any Intel x86 CPU (preferably P4 or above)
+2. Minimum 5 MB free RAM space
+3. 100 KB hard disk space
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Software Requirements:
+______________________
+
+1. Operating System: Linux or Microsoft Windows NT (DOS compatible)
+2. Compiler: GCC compiler (32-bit)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CD-ROM Contents:
+________________
+
+1. Binary - This folder contains the pre compiled TCC executables (binaries) for both Linux and Microsoft Windows NT.
+
+2. Report - This folder contains the report of the project in PDF format.
+
+3. Resources - This folder contains the:
+		a) DFA (Automata) used for lexical analysis  
+		b) LALR Parse Table used for syntax analysis
+		c) Grammar Rules of Tiny
+
+4. Sample Programs - This folder contains the sample input programs written in Tiny along with their respective outputs for both, Linux and Microsoft Windows NT.
+		     
+		     Sample Programs List:
+		     ____________________
+		     	a) Example Code 1 (array.tiny)			- Program to find the sum of two arrays 
+			b) Example Code 2 (compare.tiny)		- Program to compare two numbers
+			c) Example Code 3 (concatenate.tiny)		- Program to concatenate two strings
+			d) Example Code 4 (reverse.tiny)		- Program to display reverse of a number
+			e) Example Code 5 (sum.tiny)			- Program to find sum upto a given number	
+
+5. Source Code - This folder contains the full project source code with proper indentations and comments.
+		 
+		 Source Code files:
+		 __________________	
+			a) tmain.c 			- Main Module
+			b) tlex.c, tlex.h 		- Scanner
+			c) tparse.c, tparse.h 		- Parser
+			d) tsemantic.c, tsemantic.h 	- Semantic Analyser & Intermediate Code Generator
+			e) x86linux.c, x86linux.h 	- Final Code Generator (Linux)
+			f) x86win.c, x86win.h 		- Final Code Generator (Windows NT)
+			g) errhandle.c, errhandle.h 	- Error Handler
+			h) symtab.c, symtab.h 		- Symbol Table Manager
+			i) grammar.c, grammar.h		- Grammar Module
+			j) vardef.h			- Contains the definitions of various macros used in the project
+
+		 Coding Convention:
+		 __________________
+			a) Functions 			- all letters are small
+			b) Local Variables 		- first two letters are underscore (__)
+			c) Global variables 		- only first letter is underscore (_)	
+			d) Macros 			- all letters are capital
+
+6. READ.ME - This ASCII text file contains the meta data about the CD-ROM contents and the project.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+How to Compile the Project:
+___________________________
+
+1. On Linux (32 bit):
+_____________________
+	a) Open Terminal
+	b) Navigate to the folder containing source code 
+	c) Type "gcc -o tcc *.c" without quotes
+	d) The executable (with the name "tcc") will be generated in the current folder
+
+2. On Microsoft Windows NT:
+___________________________
+	a) Download & Intall MinGW GCC Compiler (32 bit)
+	b) Set the PATH environmental variable to the GCC bin folder
+	c) Open command prompt 
+	d) Navigate to the folder containing source code 
+	e) Type "gcc -o tcc *.c" without quotes
+	f) The executable (with the name "tcc.exe") will be generated in the current folder
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Submit Bug Reports:
+___________________
+
+Bug reports can be submitted to tcc.developers@gmail.com. Please ensure to include:
+				________________________
+	
+	a) The input file which caused the bug
+	b) Details about the OS
+	c) Details about the GCC Compiler
+	d) Details about the architecture (32 bit or 64 bit)
+	e) Description about the bug
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------

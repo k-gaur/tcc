@@ -1,0 +1,59 @@
+prog		-> enter subprog exit
+subprog		-> epsilon
+subprog		-> initstmt subprog
+subprog		-> condstmt subprog
+subprog		-> loopstmt subprog
+subprog		-> stmt subprog
+initstmt	-> idtype idname |
+initstmt	-> idtype : INTCONST idname |
+idtype		-> int
+idtype		-> char
+idtype		-> str
+idtype		-> real
+idname		-> id type
+idname		-> id type , idname
+id		-> IDENTIFIER
+id		-> IDENTIFIER [ exprs ]
+type		-> epsilon
+type		-> = const
+type		-> = - const
+const		-> STRCONST
+const		-> INTCONST
+const		-> CHARCONST
+const		-> REALCONST
+const		-> id
+condstmt	-> if exprp subprog fi
+condstmt	-> if exprp subprog else subprog fi
+exprp		-> exprs
+exprp		-> - exprs
+exprs		-> const
+exprs		-> const op exprp
+const		-> (exprp)
+op		-> relop
+op		-> alop
+op		-> logop
+op		-> =
+relop		-> <
+relop		-> >
+relop		-> <=
+relop		-> >=
+relop		-> ==
+relop		-> !=
+alop		-> +
+alop		-> -
+alop		-> *
+alop		-> /
+alop		-> %
+logop		-> ^^
+logop		-> &&
+logop		-> ||
+loopstmt	-> loop exprp subprog pool
+stmt		-> print outvar |
+stmt		-> scan invar |
+outvar		-> id
+outvar		-> STRCONST
+outvar		-> id , outvar
+outvar		-> STRCONST , outvar
+invar		-> id
+invar		-> id , invar
+stmt		-> id = exprp |
